@@ -1,9 +1,9 @@
 {
-  "name": "self-order-client",
+  "name": "test-tw",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Panospan.github.io/self-order-client",
+  "homepage": "https://Panospan.github.io/test-tw",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
