@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Panospan.github.io/test-tw",
+  "homepage": "https://panospan.github.io/test-tw",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
