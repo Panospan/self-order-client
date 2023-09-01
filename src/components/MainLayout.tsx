@@ -13,7 +13,7 @@ export const Section = ({
 }) => {
   return (
     <div className="w-full max-w-full lg:max-w-7xl mx-auto py-32 px-4 ">
-      {title ? <h2 className="text-2xl mb-8">{title}</h2> : null}
+      {title ? <h2 className="text-2xl mb-8 font-semibold">{title}</h2> : null}
       {children}
     </div>
   );

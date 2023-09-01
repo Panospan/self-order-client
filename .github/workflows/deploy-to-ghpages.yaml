@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Use Git User Info as Variables
+        run: |
+          echo "Git User Email: ${{ secrets.GIT_USER_EMAIL }}"
+          echo "Git User Name: ${{ secrets.GIT_USER_NAME }}"
       - name: Set Git User Info
         run: |
           git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"

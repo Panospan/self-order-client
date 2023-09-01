@@ -62,7 +62,7 @@ const Slider = ({ items }: { items: SliderData }) => {
     return items.map((i) => (
       <div
         key={i.title}
-        className="max-w-fit px-4 py-2 rounded text-center min-w-[200px] md:min-w-[20%] flex flex-col gap-4"
+        className="max-w-fit px-4 py-2 rounded text-center min-w-[200px] md:min-w-[20%] flex flex-col gap-4 group"
       >
         <img
           src={i.imgUrl}
@@ -70,11 +70,13 @@ const Slider = ({ items }: { items: SliderData }) => {
           draggable="false"
         />
         <h3 className="text-xl">{i.title}</h3>
-        <div className="text-base">{i.description}</div>
+        <div className="text-base group-hover:opacity-100 duration-300 opacity-80">
+          {i.description}
+        </div>
         <a
           href={i.url}
           target="_blank"
-          className="text-black w-fit mx-auto py-1 px-3 font-medium my-2 flex items-center gap-1 hover:underline"
+          className="text-black w-fit mx-auto py-1 px-3 font-medium my-2 flex items-center gap-1 hover:underline opacity-80 hover:opacity-100 duration-300"
         >
           <img src="/test-tw/link.svg" className="w-[18px]" />
           Δες το

@@ -62,9 +62,12 @@ const HeroBanner = () => {
             I am a web developer and I am currently working full-time at
             Vodafone, but I always find extra time for interesting projects.
           </motion.div>
-          <button className="bg-black text-white px-5 py-2 rounded-md w-fit hover:bg-purple-200 hover:text-black ease-out duration-200 mt-12">
+          <a
+            href="#contact"
+            className="bg-black text-white px-5 py-2 rounded-md w-fit hover:bg-purple-200 hover:text-black ease-out duration-200 mt-12"
+          >
             Let's talk
-          </button>
+          </a>
         </div>
       </Section>
     </div>

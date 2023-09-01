@@ -1,4 +1,5 @@
 import "./App.css";
+import Contact from "./components/Contact";
 import HeroBanner from "./components/HeroBanner";
 import MainLayout from "./components/MainLayout";
 import Projects from "./components/Projects";
@@ -10,6 +11,7 @@ function App() {
       <HeroBanner />
       <Technologies />
       <Projects />
+      <Contact />
       <MainLayout> </MainLayout>
     </div>
   );
