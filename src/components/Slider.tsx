@@ -112,12 +112,8 @@ const Slider = ({ children }: { children: ReactNode }) => {
           className={`absolute right-[10px] top-[50%] translate-y-[-30%] z-10 hover:bg-slate-500 hover:bg-opacity-20 rounded-full p-2 ${
             sliderRef &&
             sliderRef?.current &&
-            sliderScrolledLeft <
-              sliderRef.current.children[2].clientWidth /
-                Math.ceil(
-                  sliderRef.current.children[2].clientWidth /
-                    sliderRef.current.clientWidth
-                )
+            sliderScrolledLeft + sliderRef.current.clientWidth <
+              sliderRef.current.children[2].clientWidth
               ? "block"
               : "hidden"
           }`}
@@ -128,7 +124,7 @@ const Slider = ({ children }: { children: ReactNode }) => {
           />
         </div>
 
-        <div className="flex w-full md:w-[150%] gap-4">{children}</div>
+        <div className="flex w-fit md:w-[150%] gap-4">{children}</div>
       </div>
     </div>
   );
