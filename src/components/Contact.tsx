@@ -5,7 +5,7 @@ const Contact = () => {
     <Section title="Let's talk!">
       <div className="flex flex-col gap-4" id="contact">
         <div className="text-2xl font-bold">
-          Got some fascinating project on your mind? Let's make it a reality,
+          Got a fascinating project idea in mind? Let's make it a reality,
           together!
         </div>
 

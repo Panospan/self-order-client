@@ -17,6 +17,15 @@ const slideFromLeft = {
   },
 };
 
+const handleLinkClick = (targetId: string) => {
+  const targetElement = document.getElementById(targetId);
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+};
+
 const HeroBanner = () => {
   return (
     <div className="flex flex-col gap-2 md:px-2 lg:px-2 bg-gradient-to-r from-slate-400 to-purple-400 justify-center">
@@ -63,8 +72,9 @@ const HeroBanner = () => {
             Vodafone, but I always find extra time for interesting projects.
           </motion.div>
           <a
-            href="#contact"
-            className="bg-black text-white px-5 py-2 rounded-md w-fit hover:bg-purple-200 hover:text-black ease-out duration-200 mt-12"
+            // href="#contact"
+            onClick={() => handleLinkClick("contact")}
+            className="bg-black text-white px-5 py-2 rounded-md w-fit hover:bg-purple-200 hover:text-black ease-out duration-200 mt-12 cursor-pointer"
           >
             Let's talk
           </a>
